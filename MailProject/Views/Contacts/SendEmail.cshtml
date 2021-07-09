@@ -1,0 +1,22 @@
+﻿@model MailProject.Contact
+
+@{
+    ViewBag.Title = "SendEmail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SEND EMAIL</h2>
+@using (Html.BeginForm())
+{
+<div>
+    <div><input type="text" name="useremail" class="form-control" /></div>
+    <div><input type="text" name="subject" class="form-control" placeholder="Email subject" /></div>
+    <div><input type="text" name="body" class="form-control" placeholder="Email body" /></div>
+    <div class="input-group-btn">
+        <button class="btn btn-success" type="submit">
+            <i class="glyphicon glyphicon-send" />
+        </button>
+    </div>
+</div>
+}
+
